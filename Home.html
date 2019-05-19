@@ -3,34 +3,108 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="./Home.css">
+		<link rel="stylesheet" type="text/css" href="./css/Home.css">
 		<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 		<title>Logan Stone</title>
 	</head>
 	<body>
-		<div class = "nav">
-			<div class = "nav-items">
-				<a href = "www.github.com" target = "_blank">Github</a>
-				<a href = "#resume">Resume</a>
-				<a href = "#other-projects">Other Projects</a>
-				<a href = 'contact.html'>Email</a>
+		<div id = "nav">
+			<div class = "nav" id = "nav">
+				<div class = "nav-items">
+					<a id = "resume-button" href = "#resume">Resume</a>
+					<a id = "email" href = "#email-container">Contact</a>
+					<a id = "top" href = "#nav">Top of Page</a>
+				</div>
 			</div>
 		</div>
-		<div class = "content">
+		<div class = "content hidden">
 			<div class = "opening-container">
 				<div class = "greeting-banner">
-					<h1>Hi there! I'm Logan.</h1>
+					<h1>Hi there! I'm Logan Stone.</h1>
 				</div>
 			</div>
-			<div class = "about-me">
-					<h1>About Me</h1>
-						<p>I am a Computer Science Undergraduate student at Memorial University in St. Johns, Newfoundland.</p>
-						<p>I am developing this website to sharpen my web development skill as well as to create a portfolio of all my projects.</p>
-						
+			<div class="about-container">
+				<div class = "about-me">
+					<p>I am a Computer Science Undergraduate student at Memorial University in St. Johns, Newfoundland.</p>
+					<p>I am developing this website to sharpen my web development skill as well as to create a portfolio of all my projects.</p>
+				</div>
+			</div>
+			<div id = "resume">
+				<div class = "resume">
+					<div class = "resume-content">
+						<h1>Resume</h1>
+						<div class = "education">
+							<h2>Education</h2>'
+							<div class = "education-desc">
+								<h3>Bachelor of Computer Science | Memorial University</h3>
+								<h4>May 2017 to Present</h4>
+								<p>Anticipated graduation date: Fall 2020</p>
+								<br>
+								<p>Technologies used include:</p>
+								<ul>
+									<li>Python</li>
+									<li>Java</li>
+									<li>SQL</li>
+									<li>LaTeX</li>
+									<li>Git</li>
+								</ul>
+								<br>
+								<p class="last">Achieved a cumulative GPA of 3.95. Named to the Dean’s List for 2017-18 academic year and received the Birks Family Foundation Bursary for 2018-19.</p>
+							</div>
+						</div>
+						<div class = "work-experience">
+							<h2>Work Experience</h2>
+							<div class = "eliotts">
+								<h3>Tourism Supervisor/Server | Harbour Breton, NL</h3>
+								<h4>Summers 2015-2016</h4>
+								<p class="last">Worked in a café/museum setting which involved giving tours of the museum and addressing questions of visitors. Also took orders of customers and served food items to them in the café part of the premises. </p>
+							</div>
+							<div class = "tutor">
+								<h3>Tutor | King Academy, Harbour Breton</h3>
+								<h4>2013-2015</h4>
+								<p class = "last">Provided academic aid to students in a variety of subject areas; however, the subjects usually taught were Chemistry and Math.</p>
+							</div>
+							<div class = "drum-lesson-instructor">
+								<h3>Drum Lesson Instructor | King Academy, Harbour Breton</h3>
+								<h4>2010-2015</h4>
+								<p class = "last">Taught up to three students from grades five to twelve once a week. Topics taught were basic concepts that got students started in their drumming careers.</p>
+							</div>
+						</div>
+						<div class = "skills">
+							<h2>Skills</h2>
+							<ul>
+								<li>HTML, CSS, JavaScript</li>
+								<li>Fast Learner</li>
+								<li>Great interpersonal skills</li>
+								<li>Currently learning how to use React</li>
+							</ul>	
+						</div>
 					</div>
 				</div>
+			</div>
+			<div id = "email-container">
+				<div class = "email-area">
+					<h1>Contact and Social</h1>
+					<div class = "socials">
+						<div class = "linkedin">
+							<a href = "https://www.linkedin.com/in/logan-stone-269339183"><img src="linkedinlogo.png"></a>
+							<a class = "text" href = "https://www.linkedin.com/in/logan-stone-269339183" target = "_blank">Linkedin </a>
+						</div>
+						<div class = "email">
+							<a href = href="mailto:logan.stone20@gmail.com"><img src = "emaillogo.png"></a>
+							<a class = "text" href="mailto:logan.stone20@gmail.com">Email</a>
+						</div>
+						<div class = "github">
+							<a href = "https://github.com/logan-stone20" target = "_blank"> <img src = "githublogo.svg"></a>
+							<a class = "text" href = "https://github.com/logan-stone20">Github</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
