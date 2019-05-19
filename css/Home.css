@@ -67,6 +67,7 @@ body {
 
 .greeting-banner h1 {
 	font-family: 'Quicksand', sans-serif;
+	font-size: 2em;
 	background-color: #8f8e8d;
 	opacity: 0.8;
 	padding: 40px;
@@ -135,8 +136,18 @@ body {
 	list-style: none;
 }
 
-.resume h2,h4 {
+.resume h2,h3 {
 	padding: 2em;
+	font-size: 2em;
+}
+
+.resume h4 {
+	font-size: 1.5em;
+}
+
+.resume h1 {
+	padding: 40px 0;
+	font-size: 3em;
 }
 
 .resume h2, .resume h1, .resume p.last {
@@ -144,6 +155,7 @@ body {
 }
 
 .resume p, li {
+	font-size: 1.2em;
 	line-height: 2em;
 }
 
