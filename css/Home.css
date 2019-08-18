@@ -3,7 +3,6 @@
 }
 
 body {
-	min-width: 400px;
 	position: relative;
 	text-align: center;
 	display: none; /* Required for jquery fadein */
@@ -147,13 +146,4 @@ nav {
 	color: black;
 }
 
-@media screen and (max-width: 500px) {
-	#navbar-toggler-icon {
-		padding: 20px;
-	}
-
-	#nav-items {
-		font-size: 4em;
-	}
-}
 
