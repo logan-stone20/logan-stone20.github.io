@@ -3,34 +3,47 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="./css/Home.css">
 		<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 		<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/Home.css">
+
 		<title>Logan Stone</title>
 	</head>
 	<body>
-		<div id = "nav">
-			<div class = "nav" id = "nav">
-				<div class = "nav-selection">
-					<div class = "nav-items">
-						<a id = "resume-button" href = "#resume">Resume</a>
-						<a id = "email" href = "#email-container">Contact</a>
-						<a id = "top" href = "#nav">Top of Page</a>
-					</div>
-				</div>
-			</div>
-		</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		  <a class="navbar-brand" ><img src = "./imgs/default.png"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a id = "resume-button" class="nav-link" href = "#resume">Resume</a>
+		      </li>
+		      <li class="nav-item">
+		        <a id = "contact" class="nav-link" href="#social" >Contact</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
 		<div class = "content">
-			<div class = "opening-container">
+			<div id = "top" class = "opening-container">
 				<div class = "greeting-banner">
-					<h1>Hi there! I'm Logan Stone.</h1>
-				</div>
-			</div>
-			<div class="about-container">
-				<div class = "about-me">
-					<p>I'm a computer science undergraduate student who's trying to sharpen their web development skills.</p>
+					<h1>Hi there! I'm Logan.</h1>
 				</div>
 			</div>
 			<div id = "resume">
@@ -38,7 +51,7 @@
 					<div class = "resume-content">
 						<h1>Resume</h1>
 						<div class = "education">
-							<h2>Education</h2>'
+							<h2>Education</h2>
 							<div class = "education-desc">
 								<h3>Bachelor of Computer Science | Memorial University</h3>
 								<h4>May 2017 to Present</h4>
@@ -58,6 +71,12 @@
 						</div>
 						<div class = "work-experience">
 							<h2>Work Experience</h2>
+							<div class = "mun">
+								<h3>PC Support Assistant | Memorial University</h3>
+								<h4>June - July 2019</h4>
+								<p class = "last">Provided I.T support where required around campus. Also assisted with the rollout of Windows 10 on all campus computers.
+								</p>
+							</div>
 							<div class = "eliotts">
 								<h3>Tourism Supervisor/Server | Harbour Breton, NL</h3>
 								<h4>Summers 2015-2016</h4>
@@ -78,6 +97,7 @@
 							<h2>Skills</h2>
 							<ul>
 								<li>HTML, CSS, JavaScript</li>
+								<li>Ruby</li>
 								<li>Fast Learner</li>
 								<li>Great interpersonal skills</li>
 								<li>Currently learning how to use React</li>
@@ -86,27 +106,25 @@
 					</div>
 				</div>
 			</div>
-			<div id = "email-container">
+			<div id = "social" class = "email-container">
 				<div class = "email-area">
 					<h1>Contact and Social</h1>
 					<div class = "socials">
 						<div class = "linkedin">
-							<a href = "https://www.linkedin.com/in/logan-stone-269339183"><img src="linkedinlogo.png"></a>
+							<a href = "https://www.linkedin.com/in/logan-stone-269339183" target = "_blank"><img src="linkedinlogo.png"></a>
 							<a class = "text" href = "https://www.linkedin.com/in/logan-stone-269339183" target = "_blank">Linkedin </a>
 						</div>
 						<div class = "email">
-							<a href = href="mailto:logan.stone20@gmail.com"><img src = "emaillogo.png"></a>
-							<a class = "text" href="mailto:logan.stone20@gmail.com">Email</a>
+							<a href = "mailto:logan.stone20@hotmail.com"><img src = "emaillogo.png"></a>
+							<a href = "mailto:logan.stone20@hotmail.com" class = "text">Email</a>
 						</div>
 						<div class = "github">
 							<a href = "https://github.com/logan-stone20" target = "_blank"> <img src = "githublogo.svg"></a>
-							<a class = "text" href = "https://github.com/logan-stone20">Github</a>
+							<a class = "text" href = "https://github.com/logan-stone20" target = "_blank">Github</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
