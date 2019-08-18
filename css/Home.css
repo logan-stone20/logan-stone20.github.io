@@ -3,6 +3,7 @@
 }
 
 body {
+	min-width: 400px;
 	position: relative;
 	text-align: center;
 	display: none; /* Required for jquery fadein */
